@@ -1,0 +1,17 @@
+programa {
+	funcao inicio() {
+//declaraçao de variaveis
+real a,b,c,d
+//entrada de dados
+escreva("Insira numero a: ")
+leia(a)
+escreva("agora coloque o numero b: ")
+leia(b)
+escreva("por ultimo adicione o c: ")
+leia(c)
+//processameto
+d=a*b*c
+//saida de dados
+escreva("seu produto é: ",d)
+	}
+}
