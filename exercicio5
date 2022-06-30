@@ -1,0 +1,17 @@
+programa {
+	funcao inicio() {
+//declaração de variaveis
+real prec, novoprec
+
+//entrada de dados
+escreva("insira preço de produto: ")
+leia(prec)
+//processamento
+novoprec=prec*0.90
+
+//saida de dados
+escreva("O novo preço com desconto: ", novoprec)
+
+
+	}
+}
