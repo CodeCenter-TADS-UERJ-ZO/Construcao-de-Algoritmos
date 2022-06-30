@@ -1,0 +1,17 @@
+programa {
+	funcao inicio() {
+		//declaraçao de variaveis
+		real nota1, nota2, media, media1
+		//entrada de dados
+		escreva("Insira nota de Calculo 1: ")
+		leia(nota1)
+		escreva("Insira nota de Calculo 2: ")
+		leia(nota2)
+	
+		//processameto
+		media=nota1*2+nota2*3
+		media1=media/6
+		//saida de dados
+		escreva("a media de suas notas é: ", media1)
+	}
+}
