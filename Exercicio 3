@@ -1,0 +1,17 @@
+rograma {
+	funcao inicio() {
+		//declaraçao de variaveis
+		real a,b,d
+		//entrada de dados
+		escreva("Valor: ")
+		leia(a)
+		escreva("Valor: ")
+		leia(b)
+		
+		//processameto
+		d=a/b
+		
+		escreva("o resultado é ", d)
+		//saida de dados
+	}
+}
