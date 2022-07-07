@@ -1,0 +1,18 @@
+programa {
+	funcao inicio() {
+	    
+	    //declaração de variaveis
+	    real Sal, Vendas, Com, Salcom, Salfinal 
+	    //entrada de dados
+	    escreva("Por favor, insira seu salário:")
+	   leia(Sal)
+	    escreva("Por favor, insira sua quantidade de vendas:")
+	   leia(Vendas)
+	   
+	    //processamento
+	    Salfinal=Sal+Sal*0.04
+	    Com=Vendas*0.04
+	    //saida de dados
+		escreva("Seu salário após o aumento é ",Salfinal," sua taxa de comissão é ", Com," e sua quantidade de vendas é ", Vendas)
+	}
+}
