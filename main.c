@@ -1,25 +1,19 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <stdio.h>
-int main(){
-//declaraçao de variaveis
-float a, b, d;
+int main()
+{
+//declaração de variaveis
+
+float peso1, peso2;
+
 //entrada de dados
-printf("Escreva um valor: ");
-scanf("%f", &a);
-printf("Escreva mais um valor: ");
-scanf("%f", &b);
+
+printf("Por favor insira seu peso em KG..:");
+scanf("%f", &peso1);
+
 //processamento
-d=a/b;
 
-//saída de dados
-printf("O valor da divisão é %f",d);
+peso2= peso1 * 1000;
 
-    return 0;
+//saida de dados
+printf("Seu peso em Gramas é %.2f ..:",peso2);
 }
