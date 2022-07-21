@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main(){
+    
+
+//declaração de var
+float salmed, sal1;
+//apresentar o saldo médio e o valor do crédito
+
+//input
+printf("Por favor insira seu salário:");
+scanf("%f", &salmed);
+//process
+if (salmed > 400) {
+    sal1=0.70*salmed;
+  
+}
+else if(400> salmed > 300) {
+        sal1=0.75*salmed;
+       
+    } 
+    else if (300>salmed>200){
+            sal1=0.80*salmed;
+            
+         
+        }
+        else {  
+           sal1=0.90*salmed;
+             
+            }
+            
+    
+//output
+ printf("Seu saldo médio é:... %f e seu crédito é de %f",salmed, sal1);
+ 
+return 0;
+}
