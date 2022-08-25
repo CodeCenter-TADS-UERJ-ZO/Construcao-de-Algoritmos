@@ -1,0 +1,49 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int i, qtd=0;
+	float AV1, AV2, media, mediaTurma, soma=0, vetMedAluno[3];
+	
+	
+	for (i=0 ; i< 3; i++)
+	{
+		printf("Nota da AV1..: ");
+		scanf("%f", &AV1);
+		printf("Nota da AV2..: ");
+		scanf("%f", &AV2);
+		vetMedAluno[i] = (AV1+AV2)/ 2;
+		
+		
+		// calculando media da turma
+		soma = soma + vetMedAluno[i];
+	    printf("\n--------------------------\n");	
+	}// fim do for
+	
+	// calculando a média da Turma
+	mediaTurma = soma / i;
+	
+	printf("\nMedia da Turma..: %.2f", mediaTurma);
+	
+	
+	//Apresentar a média de cada Aluno
+	printf("\n---------- Media de Cada Aluno -------------------");
+	for (i = 0 ; i < 3 ;i++){
+		printf("\nAluno %d : %.2f", i, vetMedAluno[i]);
+  
+        if(vetMedAluno[i] < mediaTurma)
+        {
+        	qtd++;
+        }
+	
+	
+	}
+	
+
+	// 
+	printf("\nQuantidade de alunos com media abaixo da Turma..: %d", qtd);
+	
+	
+	return 0;
+}
