@@ -1,0 +1,43 @@
+
+Tirando o que não é necessário exibir
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int l, c, mat[4][3], maior, linha, menor;
+    // entrando com os dados na matriz
+    for (l = 0; l< 4; l++)
+    {
+    	for(c=0; c<3 ; c++)
+    	{
+    		printf("Numero..: ");
+    		scanf("%d", &mat[l][c]);
+    	}
+    }
+    maior = mat[0][0];
+    linha = 0;
+    for (l=0; l< 4; l++)
+    {
+    	for (c=0; c< 3; c++)
+    	{
+    		if (mat[l][c] > maior)
+	         {
+	         	maior = mat[l][c];
+	         	linha = l;
+	         }
+	   	}
+    }
+    
+    menor = mat[linha][0];
+    for (c = 1 ; c< 3; c++)
+    {
+    	if (menor > mat[linha][c])
+		{
+			menor = mat[linha][c];
+		}
+    }
+   // imprimindo a matriz
+   printf("\n\n--------------------------------\n");
+   printf("\n\nO elemento mimax...:  %d", menor);
+   return 0;
+}
